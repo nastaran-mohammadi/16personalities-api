@@ -14,7 +14,7 @@ app.use(morgan("dev"))
 
 app.use("/api", routes)
 
-app.use((err: HttpError, req: Request, res: Response, next: NextFunction) => {
+app.use((err: HttpError, req: Request, res: Response) => {
   res.status(err.status || 500).json({
     message: err.message,
   })
