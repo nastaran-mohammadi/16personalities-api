@@ -25,8 +25,8 @@ app.get('/questions', (req, res) => {
   res.send('HELLO')
 })
 
-app.listen(3000, async () => {
-  console.log(`Server running on port ${3000}`)
+app.listen(process.env.PORT || 3000, async () => {
+  console.log(`Server running on port ${process.env.PORT || 3000}`)
 })
 
 export default app
