@@ -1,4 +1,3 @@
-import { Gender } from "@/types"
 import { z } from "zod"
 
 const submission = z.object({
@@ -11,6 +10,4 @@ const submission = z.object({
   gender: z.enum(["Male", "Female", "Other"]),
 })
 
-export default {
-  submission,
-}
+export default { submission }

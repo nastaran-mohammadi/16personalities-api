@@ -1,9 +1,8 @@
-import express, { Request, Response, NextFunction } from "express"
+import express from "express"
 import cors from "cors"
 import morgan from "morgan"
 import routes from "./routes"
-import { PORT } from "@/config"
-import { HttpError } from "./utils/httpError"
+import { PORT } from "./config"
 
 const app = express()
 
@@ -13,12 +12,6 @@ app.use(express.urlencoded({ extended: false }))
 app.use(morgan("dev"))
 
 app.use("/api", routes)
-
-app.use((err: HttpError, req: Request, res: Response) => {
-  res.status(err.status || 500).json({
-    message: err.message,
-  })
-})
 
 app.listen(PORT, async () => {
   console.log(`Server running on port ${PORT}`)

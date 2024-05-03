@@ -1,11 +1,11 @@
 {
   "name": "16personalities-api",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "app.js",
   "license": "MIT",
   "scripts": {
-    "start": "node -r ts-node/register -r tsconfig-paths/register dist/app.js",
-    "dev": "nodemon -r tsconfig-paths/register src/app.ts",
+    "start": "node dist/app.js",
+    "dev": "nodemon src/app.ts",
     "build": "tsc"
   },
   "devDependencies": {
