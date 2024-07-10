@@ -1,4 +1,4 @@
-import { BASE_URL } from "@/config"
+import { BASE_URL } from "../config"
 import axios from "axios"
 import { wrapper } from "axios-cookiejar-support"
 import { CookieJar } from "tough-cookie"

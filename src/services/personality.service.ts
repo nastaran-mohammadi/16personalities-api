@@ -1,4 +1,4 @@
-import { BASE_URL, routes } from "@/config"
+import { BASE_URL, routes } from "../config"
 import {
   Gender,
   GetTestResultsPayload,
@@ -8,10 +8,10 @@ import {
   Submission,
   TestResult,
   TraitsResponse,
-} from "@/types"
-import { replaceMap } from "@/utils/replaceMap"
-import session from "@/utils/session"
-import { HttpError } from "@/utils/httpError"
+} from "../types"
+import { replaceMap } from "../utils/replaceMap"
+import session from "../utils/session"
+import { HttpError } from "../utils/httpError"
 
 /**
  * @deprecated

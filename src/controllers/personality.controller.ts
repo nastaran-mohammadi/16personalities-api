@@ -1,6 +1,6 @@
-import personalityService from "@/services/personality.service"
-import { Gender, Submission } from "@/types"
-import testValidator from "@/validators/test.validator"
+import personalityService from "../services/personality.service"
+import { Gender, Submission } from "../types"
+import testValidator from "../validators/test.validator"
 import { Request, Response } from "express"
 import { z } from "zod"
 

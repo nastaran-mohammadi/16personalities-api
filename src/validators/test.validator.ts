@@ -1,4 +1,4 @@
-import { Gender } from "@/types"
+import { Gender } from "../types"
 import { z } from "zod"
 
 const submission = z.object({
